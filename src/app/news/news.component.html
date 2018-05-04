@@ -1,3 +1,10 @@
-<p>
-  news-article works!
-</p>
+<div class="articles" *ngFor="let currentArticle of newsArticles">
+  <div class="articleImage">
+    <img src={{currentArticle.url}} />
+  </div>
+  <div class="headline">
+    <h2>{{currentArticle.headline | uppercase }}</h2>
+    <p>By {{currentArticle.author}}</p>
+    <p>{{currentArticle.snippet}}</p>
+  </div>
+</div>

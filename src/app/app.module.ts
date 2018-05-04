@@ -7,12 +7,14 @@ import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
 import { NewsComponent } from './news/news.component';
 import { routing } from './app.routing';
+import { ShowComponent } from './show/show.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    NewsComponent
+    NewsComponent,
+    ShowComponent
   ],
   imports: [
     BrowserModule,

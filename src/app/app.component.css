@@ -6,10 +6,22 @@ img#logo{
   width: 50%;
 }
 ul#nav{
+  display: flex;
+  justify-content: space-around;
   list-style-type: none;
   border-top: solid 1px #A5A7A9;
   border-bottom: solid 1px #A5A7A9;
 }
 li {
+
   display: inline;
+  padding: 15px 0;
+  font-weight: bold;
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
+a:hover {
+  border-bottom: 1px solid #000;
 }

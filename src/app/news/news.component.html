@@ -1,5 +1,6 @@
 <div class="container">
-  <div id="news" class="politicsArticles">
+  <div id="culture">
+    <h3>Culture</h3>
     <ul>
       <li *ngFor="let currentArticle of childNewsList">
     <img src={{currentArticle.url}} />
@@ -9,6 +10,34 @@
         </p>
         <p>{{currentArticle.snippet}}</p>
         <button (click)="readMoreButtonClicked(currentArticle)">Read more...</button>
+      </li>
+    </ul>
+  </div>
+  <div id="news" class="politicsArticles">
+   <h3>News & Politics</h3>
+    <ul>
+      <li *ngFor="let currentArticle of childNewsList">
+    <img src={{currentArticle.url}} />
+    <h2>{{currentArticle.headline | uppercase }}</h2>
+        <p>
+          By {{currentArticle.author}}
+        </p>
+        <p>{{currentArticle.snippet}}</p>
+        <button (click)="readMoreButtonClicked(currentArticle)">Read more...</button>
+      </li>
+    </ul>
+  </div>
+  <div id="books">
+    <h3>Book Reviews</h3>
+    <ul>
+      <li *ngFor="let currentArticle of childNewsList">
+    <img src={{currentArticle.url}} />
+    <h2>{{currentArticle.headline | uppercase }}</h2>
+        <p>
+          By {{currentArticle.author}}
+        </p>
+        <p>{{currentArticle.snippet}}</p>
+        <button  (click)="readMoreButtonClicked(currentArticle)">Read more...</button>
       </li>
     </ul>
   </div>

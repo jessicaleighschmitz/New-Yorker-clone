@@ -2,14 +2,16 @@
 
 #### A website that clones the New Yorker website using Angular.
 
+#### **By, Jessica Schmitz**
+
 ### Specs
 
-1) Program displays article component  containing article object.
+1) Program displays article component containing article object.
 2) Program displays several articles at once.
 3) Program expands full article upon click event.
-4) Program hides other articles when one article has been selected.
+4) Program hides other articles when one article has been selected. //incomplete
 5) A navigation bar is displayed.
-6) User can click on component links in the navigation bar to take them to relevant articles.
+6) User can click on component links in the navigation bar to take them to relevant articles. //incomplete
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.5.
 
@@ -45,7 +47,7 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
  * Jasmine
  * Karma
  * ESLint
- 
+
 
 ## Contact Details
 

@@ -1,6 +1,11 @@
 <div *ngIf="childSelectedNews" class="entireArticle">
   <ul>
     <li>
+      <img src={{childSelectedNews.url}} />
+      <h2>{{childSelectedNews.headline | uppercase }}</h2>
+          <p>
+            By {{childSelectedNews.author}}
+          </p>
       {{childSelectedNews.fullContent}}
     </li>
   </ul>

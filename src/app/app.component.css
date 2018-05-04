@@ -1,1 +1,15 @@
-
+img#logo{
+  display: block;
+  max-width: 325px;
+  max-height: 115px;
+  margin: 50px auto;
+  width: 50%;
+}
+ul#nav{
+  list-style-type: none;
+  border-top: solid 1px #A5A7A9;
+  border-bottom: solid 1px #A5A7A9;
+}
+li {
+  display: inline;
+}

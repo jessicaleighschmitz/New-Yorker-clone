@@ -1,5 +1,13 @@
 <div class="header">
-  <h1>New Yorker</h1>
+  <img id= "logo" src="./../assets/The-new-yorker-logo.jpg" alt="New Yorker logo" />
+</div>
+<div>
+  <ul id="nav">
+    <li><a href="#news">News</a></li>
+    <li><a href="#">Culture</a></li>
+    <li><a href="#">Books</a></li>
+    <li><a href="#">Subscribe</a></li>
+  </ul>
 </div>
 <app-news [childNewsList]="articles" (clickSender)="readMore($event)"></app-news>
 <app-show [childSelectedNews]="selectedArticle" (clickedDone)="finishedShowing()"></app-show>

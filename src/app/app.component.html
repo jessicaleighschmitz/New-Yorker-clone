@@ -10,7 +10,10 @@
         By {{currentArticle.author}}
       </p>
       <p>{{currentArticle.snippet}}</p>
-      <button (click)="readMore()">Read more...</button>
+      <button ng-click="readMore = !readMore">Read more...</button>
+      <p ng-show="readMore">
+        jdfn;owebfowe
+      </p>
     </li>
   </ul>
 </div>

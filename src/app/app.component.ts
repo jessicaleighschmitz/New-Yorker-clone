@@ -18,6 +18,10 @@ export class AppComponent {
     new News('https://media.newyorker.com/photos/5aeb507c79f6430aaa0f9cbd/4:3/w_284,c_limit/Davidson-Rudy.jpg', 'guiliani and the desperate campaign to protect trump', 'Adam Davidson', 'Guiliani makes huge fumble on Sean Hannity\'s show and the Trump team scramble to explain'),
     new News('https://media.newyorker.com/photos/5ae711f5b9b48d7e3cb169c6/4:3/w_930,c_limit/gessen-wolf-whcd.jpg', 'How Michelle Wolf Blasted Open the Fictions of Trump Era Journalism', 'Masha Gessen', 'Her routine at the White House Correspondents\’ Association dinner was only as obscene as the Presidency itself')
   ];
+
+  readMore(){
+    console.log('hi');
+  }
   constructor() { }
 
   ngOnInit() {

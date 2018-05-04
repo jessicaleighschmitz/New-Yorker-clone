@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { News } from './../models/newYorker.model';
 
 @Component({
@@ -7,7 +7,7 @@ import { News } from './../models/newYorker.model';
   styleUrls: ['./news.component.css']
 })
 export class NewsComponent implements OnInit {
-  
+
   constructor() { }
 
   ngOnInit() {

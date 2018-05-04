@@ -1,1 +1,14 @@
 <h2>hello</h2>
+<div class="politicsArticles">
+  <ul>
+    <li *ngFor="let currentArticle of articles">
+  <img src={{currentArticle.url}} />
+  <h2>{{currentArticle.headline | uppercase }}</h2>
+      <p>
+        By {{currentArticle.author}}
+      </p>
+      <p>{{currentArticle.snippet}}</p>
+      <button (click)="readMore()">Read more...</button>
+    </li>
+  </ul>
+</div>

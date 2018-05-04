@@ -1,7 +1,8 @@
 <div class="header">
   <h1>New Yorker</h1>
 </div>
-<div class="politicsArticles">
+<app-beers [childNewsList]="articles" (clickSender)="readMore($event)"></app-beers>
+<!-- <div class="politicsArticles">
   <ul>
     <li *ngFor="let currentArticle of articles">
   <img src={{currentArticle.url}} />
@@ -10,13 +11,10 @@
         By {{currentArticle.author}}
       </p>
       <p>{{currentArticle.snippet}}</p>
-      <button ng-click="readMore = !readMore">Read more...</button>
-      <p ng-show="readMore">
-        jdfn;owebfowe
-      </p>
+      <button (click)="readMore()">Read more...</button>
     </li>
   </ul>
-</div>
+</div> -->
 
 
 <!-- <router-outlet></router-outlet> -->

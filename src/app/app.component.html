@@ -2,6 +2,9 @@
   <h1>New Yorker</h1>
 </div>
 <app-news [childNewsList]="articles" (clickSender)="readMore($event)"></app-news>
+<app-show [childSelectedNews]="selectedBeer" (clickedDone)="finishedShowing()"></app-show>
+
+
 <!-- <div class="politicsArticles">
   <ul>
     <li *ngFor="let currentArticle of articles">

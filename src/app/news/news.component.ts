@@ -9,12 +9,14 @@ import { News } from './../models/newYorker.model';
 export class NewsComponent implements OnInit {
   @Input() childNewsList: News[];
   @Output() clickSender = new EventEmitter();
-  constructor() { }
+
 
   readMoreButtonClicked(articleToShow: News) {
     console.log(articleToShow);
     this.clickSender.emit(articleToShow);
   }
+
+  constructor() { }
   ngOnInit() {
   }
 

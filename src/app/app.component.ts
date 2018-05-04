@@ -25,6 +25,10 @@ selectedArticle = null;
     console.log('hi');
     this.selectedArticle = clickedNews;
   }
+
+  finishedShowing(){
+    this.selectedArticle = null;
+  }
   constructor() { }
 
   ngOnInit() {

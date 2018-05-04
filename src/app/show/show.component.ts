@@ -9,6 +9,12 @@ import { News } from './../models/newYorker.model';
 export class ShowComponent implements OnInit {
   @Input() childSelectedNews: News;
   @Output() clickedDone = new EventEmitter();
+
+  finishedShowing(){
+    console.log('bye');
+    this.clickedDone.emit();
+  }
+
   constructor() { }
 
   ngOnInit() {

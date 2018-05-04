@@ -1,3 +1,8 @@
-<p>
-  show works!
-</p>
+<div *ngIf="childSelectedNews" class="entireArticle">
+  <ul>
+    <li>
+      {{childSelectedNews.fullContent}}
+    </li>
+  </ul>
+  <button (click)="finishedShowing()">Show less</button>
+</div>

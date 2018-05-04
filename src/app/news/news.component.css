@@ -1,4 +1,22 @@
+.container {
+  display: flex;
+  justify-content: flex-end;
+}
+#news {
+  border-left: 1px solid #A5A7A9;
+  border-right: 1px solid #A5A7A9;
+  max-width: 450px;
+}
 img {
-  max-height: 200px;
-  max-width: 240px;
+  max-height: 250px;
+  max-width: 300px;
+}
+ul {
+  list-style-type: none;
+
+}
+li {
+  text-align: center;
+  margin-top: 50px;
+  border-bottom: 1px solid #A5A7A9;
 }

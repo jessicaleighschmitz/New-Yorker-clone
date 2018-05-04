@@ -1,10 +1,16 @@
-<div class="articles" *ngFor="let currentArticle of newsArticles">
-  <div class="articleImage">
-    <img src={{currentArticle.url}} />
-  </div>
+<h2>hello</h2>
+<ul>
+  <li *ngFor="let currentArticle of newsArticles">
+    {{currentArticle.author}}
+  </li>
+</ul>
+<!-- <div class="articles" *ngFor="let currentArticle of newsArticles">
+    <p>
+      <img src={{currentArticle.url}} />
+    </p>
   <div class="headline">
     <h2>{{currentArticle.headline | uppercase }}</h2>
     <p>By {{currentArticle.author}}</p>
     <p>{{currentArticle.snippet}}</p>
   </div>
-</div>
+</div> -->

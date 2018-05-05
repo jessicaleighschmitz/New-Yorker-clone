@@ -9,6 +9,7 @@ import { News } from './../models/newYorker.model';
 export class NewsComponent implements OnInit {
   @Input() childNewsList: News[];
   @Output() clickSender = new EventEmitter();
+  @Output() clickSubscribe = new EventEmitter();
 
 
   readMoreButtonClicked(articleToShow: News) {

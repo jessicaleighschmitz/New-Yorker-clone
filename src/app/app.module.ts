@@ -8,13 +8,15 @@ import { AppComponent } from './app.component';
 import { NewsComponent } from './news/news.component';
 import { routing } from './app.routing';
 import { ShowComponent } from './show/show.component';
+import { SubscribeComponent } from './subscribe/subscribe.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     NewsComponent,
-    ShowComponent
+    ShowComponent,
+    SubscribeComponent
   ],
   imports: [
     BrowserModule,

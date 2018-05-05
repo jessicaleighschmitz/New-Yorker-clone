@@ -1,0 +1,18 @@
+<div>
+  <h2>Subscribe</h2>
+
+  <label>First Name:</label>
+  <input #firstNameInput type="text" required>
+  <label>Last Name:</label>
+  <input #lastNInput type="text">
+  <label>Email:</label>
+  <input #emailInput type="text">
+  <label>Street Address:</label>
+  <input #streetInput type="text">
+  <label>City Address:</label>
+  <input #cityInput type="text">
+  <label>State:</label>
+  <input #stateInput type="text">
+
+  <button (click)="submitForm(firstNameInput.value, lastNameInput.value, emailInput.value, streetInput.value, cityInput.value, stateInput.value)">Subscribe</button>
+</div>

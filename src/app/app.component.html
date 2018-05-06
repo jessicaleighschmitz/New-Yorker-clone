@@ -1,12 +1,12 @@
 <div class="header">
-  <img id= "logo" src="./../assets/The-new-yorker-logo.jpg" alt="New Yorker logo" />
+  <a routerLink=""><img id= "logo" src="./../assets/The-new-yorker-logo.jpg" alt="New Yorker logo" /></a>
 </div>
 <div>
   <ul id="nav">
-    <li><a href="#news">News</a></li>
-    <li><a href="#">Culture</a></li>
+    <li><a routerLink="news">News</a></li>
+    <li><a routerLink="culture">Culture</a></li>
     <li><a href="#">Books</a></li>
-    <li><a href="#">Subscribe</a></li>
+    <li><a routerLink="subscribe">Subscribe</a></li>
   </ul>
 </div>
 <app-news [childNewsList]="articles" (clickSender)="readMore($event)"></app-news>

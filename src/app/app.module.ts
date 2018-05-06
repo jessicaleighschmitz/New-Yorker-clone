@@ -9,6 +9,7 @@ import { NewsComponent } from './news/news.component';
 import { routing } from './app.routing';
 import { ShowComponent } from './show/show.component';
 import { SubscribeComponent } from './subscribe/subscribe.component';
+import { CultureComponent } from './culture/culture.component';
 
 
 @NgModule({
@@ -16,7 +17,8 @@ import { SubscribeComponent } from './subscribe/subscribe.component';
     AppComponent,
     NewsComponent,
     ShowComponent,
-    SubscribeComponent
+    SubscribeComponent,
+    CultureComponent
   ],
   imports: [
     BrowserModule,

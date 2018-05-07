@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Culture } from '../culture.model';
+import { Culture } from './../models/culture.model';
 
 @Component({
   selector: 'app-culture',
@@ -8,8 +8,8 @@ import { Culture } from '../culture.model';
 })
 export class CultureComponent implements OnInit {
 cultureArticles: Culture[] = [
-  new Culture('')
-  //hard code some articles 
+  new Culture('', '', '', '', '')
+  //hard code some articles
 ]
   constructor() { }
 

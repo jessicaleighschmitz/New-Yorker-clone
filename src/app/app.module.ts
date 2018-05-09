@@ -9,6 +9,7 @@ import { NewsComponent } from './news/news.component';
 import { routing } from './app.routing';
 import { ShowComponent } from './show/show.component';
 import { SubscribeComponent } from './subscribe/subscribe.component';
+import { CategoryPipe } from './category.pipe';
 
 
 
@@ -17,7 +18,8 @@ import { SubscribeComponent } from './subscribe/subscribe.component';
     AppComponent,
     NewsComponent,
     ShowComponent,
-    SubscribeComponent
+    SubscribeComponent,
+    CategoryPipe
   ],
   imports: [
     BrowserModule,

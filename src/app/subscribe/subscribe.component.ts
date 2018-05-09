@@ -3,6 +3,7 @@ import { News } from './../models/newYorker.model';
 import { Subscribe } from './../models/subscription.model';
 
 
+
 @Component({
   selector: 'app-subscribe',
   templateUrl: './subscribe.component.html',

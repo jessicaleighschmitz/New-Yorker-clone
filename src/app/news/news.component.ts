@@ -1,5 +1,6 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { News } from './../models/newYorker.model';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-news',
@@ -17,7 +18,7 @@ export class NewsComponent implements OnInit {
     this.clickSender.emit(articleToShow);
   }
 
-  constructor() { }
+  constructor(private router: Router) { }
   ngOnInit() {
   }
 

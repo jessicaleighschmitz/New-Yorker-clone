@@ -10,7 +10,16 @@ import { routing } from './app.routing';
 import { ShowComponent } from './show/show.component';
 import { SubscribeComponent } from './subscribe/subscribe.component';
 import { CategoryPipe } from './category.pipe';
+import { masterFirebaseConfig } from './api-keys';
+import { AngularFireModule } from 'angularfire2';
+import { AngularFireDatabaseModule } from 'angularfire2/database';
 
+export const firebaseConfig = {
+  apiKey: masterFirebaseConfig.apiKey,
+  authDomain: masterFirebaseConfig.authDomain,
+  databaseURL: masterFirebaseConfig.databaseURL,
+  storageBucket: masterFirebaseConfig.storageBucket
+};
 
 
 @NgModule({
@@ -25,7 +34,9 @@ import { CategoryPipe } from './category.pipe';
     BrowserModule,
     FormsModule,
     HttpModule,
-    routing
+    routing,
+    AngularFireModule.initializeApp(firebaseConfig),
+   AngularFireDatabaseModule
   ],
   providers: [],
   bootstrap: [AppComponent]

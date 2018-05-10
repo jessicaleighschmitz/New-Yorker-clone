@@ -1,17 +1,29 @@
 <div class="header">
+  <a href="subscribe"><img src="https://tpc.googlesyndication.com/simgad/15763445804463783895" alt=""></a>
   <a routerLink=""><img id= "logo" src="./../assets/The-new-yorker-logo.jpg" alt="New Yorker logo" /></a>
+  <ul>
+    <li>Shop</li>
+    <li>Sign in</li>
+    <li>Link Your subscription</li>
+    <li><a href="#"><img src="https://www.flaticon.com/free-icon/magnifying-glass_49116" alt="Search Icon"></a></li>
+  </ul>
 </div>
 <div>
   <ul id="nav">
-    <li><a routerLink="news">News</a></li>
+    <li><a routerLink="politics">News</a></li>
     <li><a routerLink="culture">Culture</a></li>
     <li><a href="books">Books</a></li>
     <li><a routerLink="subscribe">Subscribe</a></li>
+    <li>Business &amp; Tech </li>
+    <li>Humor</li>
+    <li>Cartoons</li>
+    <li>Magazine</li>
+    <li>Video</li>
+    <li>Podcasts</li>
+    <li>Archive</li>
+    <li>Goings On</li>
+    <li><a routerLink="subscribe">Subscribe</a></li>
   </ul>
 </div>
-<app-news [childNewsList]="articles" (clickSender)="readMore($event)"></app-news>
-<app-show [childSelectedNews]="selectedArticle" (clickedDone)="finishedShowing()"></app-show>
-
-
 
 <router-outlet></router-outlet>

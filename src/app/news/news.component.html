@@ -2,42 +2,42 @@
   <div id="culture">
     <h3>Culture</h3>
     <ul>
-      <li *ngFor="let currentArticle of childNewsList">
+      <li *ngFor="let currentArticle of articles | async">
     <img src={{currentArticle.url}} />
     <h2>{{currentArticle.headline | uppercase }}</h2>
         <p>
           By {{currentArticle.author}}
         </p>
         <p>{{currentArticle.snippet}}</p>
-        <button (click)="readMoreButtonClicked(currentArticle)">Read more...</button>
+        <button>Read more...</button>
       </li>
     </ul>
   </div>
   <div id="news" class="politicsArticles">
-   <h3>News & Politics</h3>
+   <h3>News and Politics</h3>
     <ul>
-      <li *ngFor="let currentArticle of childNewsList">
+      <li *ngFor="let currentArticle of articles | async">
     <img src={{currentArticle.url}} />
     <h2>{{currentArticle.headline | uppercase }}</h2>
         <p>
           By {{currentArticle.author}}
         </p>
         <p>{{currentArticle.snippet}}</p>
-        <button (click)="readMoreButtonClicked(currentArticle)">Read more...</button>
+        <button>Read more</button>
       </li>
     </ul>
   </div>
   <div id="books">
     <h3>Book Reviews</h3>
     <ul>
-      <li *ngFor="let currentArticle of childNewsList">
+      <li *ngFor="let currentArticle of articles | async">
     <img src={{currentArticle.url}} />
     <h2>{{currentArticle.headline | uppercase }}</h2>
         <p>
           By {{currentArticle.author}}
         </p>
         <p>{{currentArticle.snippet}}</p>
-        <button  (click)="readMoreButtonClicked(currentArticle)">Read more...</button>
+        <button>Read more...</button>
       </li>
     </ul>
   </div>

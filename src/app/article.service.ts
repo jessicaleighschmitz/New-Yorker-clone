@@ -3,8 +3,9 @@ import { News } from './models/newYorker.model';
 import { AngularFireDatabase, FirebaseListObservable } from 'angularfire2/database';
 
 
+
 @Injectable()
-export class articleService {
+export class ArticleService {
   articles: FirebaseListObservable<any[]>;
 
   constructor(private database: AngularFireDatabase) {
@@ -15,6 +16,6 @@ export class articleService {
   }
 
   getArticlesById(articleId: string){
-    return.this.database.object('articles/' + articleId);
+    return this.database.object('articles/' + articleId);
   }
 }

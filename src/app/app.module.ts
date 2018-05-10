@@ -9,10 +9,13 @@ import { NewsComponent } from './news/news.component';
 import { routing } from './app.routing';
 import { ShowComponent } from './show/show.component';
 import { SubscribeComponent } from './subscribe/subscribe.component';
-import { CategoryPipe } from './category.pipe';
+// import { CategoryPipe } from './category.pipe';
 import { masterFirebaseConfig } from './api-keys';
 import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
+import { CultureComponent } from './culture/culture.component';
+import { BooksComponent } from './books/books.component';
+import { PoliticsComponent } from './politics/politics.component';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -28,7 +31,10 @@ export const firebaseConfig = {
     NewsComponent,
     ShowComponent,
     SubscribeComponent,
-    CategoryPipe
+    CultureComponent,
+    BooksComponent,
+    PoliticsComponent,
+    // CategoryPipe
   ],
   imports: [
     BrowserModule,

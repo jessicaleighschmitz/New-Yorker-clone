@@ -2,7 +2,7 @@
   <div id="culture">
     <h3>Culture</h3>
     <ul>
-      <li *ngFor="let currentArticle of childNewsList | category">
+      <li *ngFor="let currentArticle of childNewsList">
     <img src={{currentArticle.url}} />
     <h2>{{currentArticle.headline | uppercase }}</h2>
         <p>
@@ -16,7 +16,7 @@
   <div id="news" class="politicsArticles">
    <h3>News & Politics</h3>
     <ul>
-      <li *ngFor="let currentArticle of childNewsList | news">
+      <li *ngFor="let currentArticle of childNewsList">
     <img src={{currentArticle.url}} />
     <h2>{{currentArticle.headline | uppercase }}</h2>
         <p>

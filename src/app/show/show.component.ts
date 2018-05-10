@@ -11,7 +11,6 @@ export class ShowComponent implements OnInit {
   @Output() clickedDone = new EventEmitter();
 
   finishedShowing(){
-    console.log('bye');
     this.clickedDone.emit();
   }
 

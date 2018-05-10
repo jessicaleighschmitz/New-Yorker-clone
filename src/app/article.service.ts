@@ -2,8 +2,6 @@ import { Injectable } from '@angular/core';
 import { News } from './models/newYorker.model';
 import { AngularFireDatabase, FirebaseListObservable } from 'angularfire2/database';
 
-
-
 @Injectable()
 export class ArticleService {
   articles: FirebaseListObservable<any[]>;
@@ -15,7 +13,7 @@ export class ArticleService {
     return this.articles;
   }
 
-  getArticlesById(articleId: string){
+  getArticlesById(articleId: string) {
     return this.database.object('articles/' + articleId);
   }
 }

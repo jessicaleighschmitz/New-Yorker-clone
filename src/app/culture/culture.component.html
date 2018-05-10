@@ -1,1 +1,13 @@
 <h2>Culture</h2>
+
+<ul>
+  <li *ngFor="let currentArticle of articles | async| categoryCulture">
+<img src={{currentArticle.url}} />
+<h2>{{currentArticle.headline | uppercase }}</h2>
+    <p>
+      By {{currentArticle.author}}
+    </p>
+    <p>{{currentArticle.snippet}}</p>
+    <button>Read more...</button>
+  </li>
+</ul>

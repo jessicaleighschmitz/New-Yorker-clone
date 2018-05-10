@@ -17,7 +17,6 @@ export class PoliticsComponent implements OnInit {
   constructor(private router: Router, private articleService: ArticleService) { }
 
   ngOnInit() {
-    console.log('hi');
     this.articles = this.articleService.getArticles();
   }
   detailArticles(clickedArticle){

@@ -22,4 +22,7 @@ export class PoliticsComponent implements OnInit {
   detailArticles(clickedArticle){
     this.router.navigate(['politics', clickedArticle.$key])
   }
+  goToDetailPage(clickedAlbum) {
+   this.router.navigate(['articles', clickedAlbum.$key]);
+ };
 }

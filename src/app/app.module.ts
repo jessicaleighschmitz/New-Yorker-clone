@@ -15,6 +15,7 @@ import { CultureComponent } from './culture/culture.component';
 import { BooksComponent } from './books/books.component';
 import { PoliticsComponent } from './politics/politics.component';
 import { CategoryCulturePipe } from './categoryCulture.pipe';
+import { CategoryBooksPipe } from './categoryBooks.pipe'
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -34,7 +35,8 @@ export const firebaseConfig = {
     BooksComponent,
     PoliticsComponent,
     CategoryPoliticsPipe,
-    CategoryCulturePipe
+    CategoryCulturePipe,
+    CategoryBooksPipe
   ],
   imports: [
     BrowserModule,
@@ -42,7 +44,7 @@ export const firebaseConfig = {
     HttpModule,
     routing,
     AngularFireModule.initializeApp(firebaseConfig),
-   AngularFireDatabaseModule
+    AngularFireDatabaseModule
   ],
   providers: [],
   bootstrap: [AppComponent]

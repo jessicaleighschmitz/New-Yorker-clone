@@ -21,4 +21,7 @@ export class CultureComponent implements OnInit {
   detailArticles(clickedArticle){
     this.router.navigate(['culture', clickedArticle.$key])
   }
+  goToDetailPage(clickedAlbum) {
+   this.router.navigate(['articles', clickedAlbum.$key]);
+ };
 }

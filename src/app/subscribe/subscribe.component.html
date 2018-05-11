@@ -59,22 +59,39 @@
 <div id="middleImage">
   <img src="https://subscribe.newyorker.com/circulation/newyorker/images/TNY_landingpage_PremiumBar_FellswoopWithToteB.png" alt="tote image">
 </div>
-<div class="UserInfo">
-  <p id="enterInfo">
-    Enter your information.
-  </p>
-  <label>FIRST NAME:</label>
-  <input #firstNameInput type="text" required>
-  <label>LAST NAME:</label>
-  <input #lastNInput type="text">
-  <label>EMAIL:</label>
-  <input #emailInput type="text">
-  <label>STREET ADDRESS:</label>
-  <input #streetInput type="text">
-  <label>CITY:</label>
-  <input #cityInput type="text">
-  <label>STATE:</label>
-  <input #stateInput type="text">
-
-  <button (click)="submitForm(firstNameInput.value, lastNameInput.value, emailInput.value, streetInput.value, cityInput.value, stateInput.value)">Subscribe</button>
+<p id="enterInfo">
+  Enter your information.
+</p>
+<div class="userInfo">
+<div class="form-row">
+  <div class="col">
+    <label>FIRST NAME:</label>
+    <input #firstNameInput type="text" required>
+  </div>
+  <div class="col">
+    <label>LAST NAME:</label>
+    <input #lastNInput type="text">
+  </div>
+</div>
+<div class="form-row">
+  <div class="col">
+    <label>EMAIL:</label>
+    <input #emailInput type="text">
+  </div>
+  <div class="col">
+    <label>STREET ADDRESS:</label>
+    <input #streetInput type="text">
+  </div>
+</div>
+<div class="form-row">
+  <div class="col">
+    <label>CITY:</label>
+    <input #cityInput type="text">
+  </div>
+  <div class="col">
+    <label>STATE:</label>
+    <input #stateInput type="text">
+  </div>
+</div>
+  <button id="subscribeButton" (click)="submitForm(firstNameInput.value, lastNameInput.value, emailInput.value, streetInput.value, cityInput.value, stateInput.value)">Subscribe</button>
 </div>

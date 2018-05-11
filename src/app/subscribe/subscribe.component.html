@@ -1,6 +1,61 @@
+<header>
+  <img src="./assets/subscribebanner.jpg" alt="Subscribe Banner">
+</header>
 <div>
-  <h2>Subscribe</h2>
-
+  <div id="headerPlan">
+    <h2>Choose any plan. <span>Starts at a $1 a week + a free tote!</span></h2>
+  </div>
+<div id="subscribeOptions">
+  <div id="print">
+    <h3>Print</h3>
+    <p>
+      The New Yorker print magazine
+    </p>
+    <ul>
+      <li>The New Yorker print edition, conveniently delivered weekly (free shipping)</li>
+      <li>Free New Yorker tote bag</li>
+      <div class="subscribeOffer">
+        <p>
+          12 Weeks for $12
+        </p>
+      </div>
+    </ul>
+  </div>
+  <div id="digital">
+      <h3>Digital</h3>
+      <p>Complete Digital Access</p>
+      <ul>
+        <li>Access to newyorker.com</li>
+        <li>Access to all New Yorker iOS apps</li>
+        <li>Google Newsfeed(Android)</li>
+        <li>Access to Online Archives</li>
+        <li>Free New Yorker tote bag</li>
+      </ul>
+      <div class="subscribeOffer">
+        <p>
+          12 Weeks for $12
+        </p>
+      </div>
+  </div>
+  <div id="digital">
+      <h3>Print + Digital</h3>
+      <p>Everything included in Print + Digital</p>
+      <ul>
+        <li>The New Yorker print edition, delivered weekly (free shipping)</li>
+        <li>Access to newyorker.com</li>
+        <li>Access to all New Yorker iOS apps</li>
+        <li>Google Newsfeed(Android)</li>
+        <li>Access to Online Archives</li>
+        <li>Free New Yorker tote bag</li>
+      </ul>
+      <div class="subscribeOffer">
+        <p>
+          12 Weeks for $12
+        </p>
+      </div>
+  </div>
+</div>
+</div>
   <label>First Name:</label>
   <input #firstNameInput type="text" required>
   <label>Last Name:</label>
@@ -15,4 +70,3 @@
   <input #stateInput type="text">
 
   <button (click)="submitForm(firstNameInput.value, lastNameInput.value, emailInput.value, streetInput.value, cityInput.value, stateInput.value)">Subscribe</button>
-</div>

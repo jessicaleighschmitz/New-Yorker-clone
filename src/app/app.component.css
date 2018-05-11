@@ -20,6 +20,12 @@ img#glass{
   max-width: 30px;
   max-height: 30px;
 }
+.add{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
 .headerList{
   display: inline-block;
   padding-bottom: 5px;

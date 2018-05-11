@@ -35,3 +35,22 @@ li {
 #sidebar{
   max-width: 320px;
 }
+.subAdd{
+  border-top: solid 1px #A5A7A9;
+  border-bottom: solid 1px #A5A7A9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 20px;
+  padding-right: 20px;
+  flex: 0 0 100%;
+  max-width: 100%;
+  width: 100%;
+  min-height: 80px;
+  text-align: center;
+}
+.subAdd img{
+  max-height: 90px;
+  margin: 0;
+
+}

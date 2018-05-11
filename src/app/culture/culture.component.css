@@ -1,6 +1,27 @@
-/* img {
+img {
   display: block;
   max-height: 250px;
   max-width: 80%;
   margin: 0 auto;
-} */
+}
+ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+}
+li {
+  display: inline;
+  padding: 15px 0;
+  font-weight: bold;
+}
+.culture{
+
+
+}
+h2{
+  margin: 40px auto;
+  padding-bottom: 0;
+  font-size: 44px;
+  line-height: 1.09;
+  text-align: center;
+}

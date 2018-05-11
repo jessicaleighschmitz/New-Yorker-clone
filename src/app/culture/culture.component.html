@@ -1,5 +1,13 @@
 <h2>Culture</h2>
-
+<div class="culture">
+  <ul>
+    <li>CULTURAL COMMENT</li>
+    <li>THE CRITICS</li>
+    <li>FOOD</li>
+    <li>PHOTO BOOTH</li>
+    <li>CROSSWORD</li>
+  </ul>
+</div>
 <ul>
   <li *ngFor="let currentArticle of articles | async| categoryCulture">
 <img src={{currentArticle.url}} />

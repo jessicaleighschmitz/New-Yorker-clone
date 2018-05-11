@@ -1,7 +1,8 @@
 <div class="full">
   <ul>
     <li>
-      <!-- <img src={{(articleToDisplay | async)?.url}} /> -->
+      <!-- <img src={{(articleToDisplay)?.url}} /> -->
+      <!-- want this image to populate but it wont -->
       <h2>{{(articleToDisplay | async)?.headline | uppercase }}</h2>
           <p>
             By {{(articleToDisplay | async)?.author}}
@@ -9,5 +10,4 @@
       {{(articleToDisplay | async)?.fullContent}}
     </li>
   </ul>
-  <!-- <button (click)="finishedShowing()">Show less</button> -->
 </div>

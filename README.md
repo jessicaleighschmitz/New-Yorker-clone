@@ -6,12 +6,25 @@
 
 ### Specs
 
-1) Program displays article component containing article object.
+1) Program displays news component containing an article object.
 2) Program displays several articles at once.
 3) Program expands full article upon click event.
-4) Program hides other articles when one article has been selected. //incomplete
-5) A navigation bar is displayed.
-6) User can click on component links in the navigation bar to take them to relevant articles. //incomplete
+4) Program hides other articles when one article has been selected.
+5) A navigation bar is displayed with links to other pages on the site.
+6) User can click on component links in the navigation bar to take them to relevant articles.
+7) Each page will display articles that are filtered by category using a pipe.
+8) The New Yorker image on the header will act as a route anchor sending the user back to the homepage.
+9) A subscription component will contain a user log in input.
+10) When submitted, the information from the log in input will display back to the user.
+11) Firebase will act a database storing the articles data in JSON format.
+12) A service is in place to access the data.
+
+### User Stories
+
+* The user will enter the site an be able to view an image and headline from many articles.
+* The user will be able to click onto the image or headline and see the entire article on it's own page.
+* The user will be able to use the navigation bar to surf around the site and see articles filtered into groups based on category.
+* The user will be able to sign up for a subscription to the New Yorker (without a payment section).
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.5.
 

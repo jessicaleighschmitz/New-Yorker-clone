@@ -1,9 +1,34 @@
+.header{
+  display: flex;
+}
 img#logo{
   display: block;
-  max-width: 325px;
+  max-width: 302px;
   max-height: 115px;
   margin: 50px auto;
-  width: 50%;
+  height: 100%;
+  margin: 0 auto;
+  text-align: center;
+  transition: all .5s;
+  width: 100%;
+}
+.headerList{
+  display: inline-block;
+  padding-bottom: 5px;
+  vertical-align: middle;
+  margin-right: 23px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: all .5s;
+  margin-top: 47px;
+}
+.headerList li{
+  margin-right: 20px;
+  padding-top: 5px;
+  font-size: 12px;
+  font-weight: 500;
+  font-family: Graphik Web,Helvetica Neue,Helvetica,Arial,sans-serif;
 }
 a img#tote:hover{
   border-bottom: none;

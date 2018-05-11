@@ -7,8 +7,8 @@
 </div>
 <div class="container">
   <div>
-    <ul>
-      <li *ngFor="let currentArticle of articles | async | categoryPolitics">
+    <ul class="main">
+      <li class="content" *ngFor="let currentArticle of articles | async | categoryPolitics">
     <img src={{currentArticle.url}} />
     <h2 (click)="goToDetailPage(currentArticle)">{{currentArticle.headline | uppercase }}</h2>
         <p>
@@ -21,7 +21,7 @@
   </div>
   <div id="sidebar">
     <h3>News &amp; Culture</h3>
-    <ul>
+    <ul class="sidebar">
       <li *ngFor="let currentArticle of articles | async | categoryCulture">
     <img src={{currentArticle.url}} />
     <h2 (click)="goToDetailPage(currentArticle)">{{currentArticle.headline | uppercase }}</h2>

@@ -4,20 +4,26 @@ img {
   max-width: 80%;
   margin: 0 auto;
 }
-ul {
-  list-style-type: none;
-  display: flex;
-  justify-content: center;
+ul.culture{
+  text-align: center;
 }
-li {
+ul.main{
+  list-style-type: none;
+  text-align: center;
+  margin: 20px 400px;
+}
+li.cult{
   display: inline;
   padding: 15px 0;
   font-weight: bold;
   margin: 0 20px;
 }
-.culture{
-
-
+li.main {
+  display: inline;
+  padding: 15px 0;
+  font-weight: bold;
+  margin: 0 20px;
+  border-bottom: 1px solid #A5A7A9;
 }
 h2{
   margin: 40px auto;

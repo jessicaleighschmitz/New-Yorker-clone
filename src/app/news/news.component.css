@@ -24,10 +24,16 @@ img {
   max-width: 80%;
   margin: 0 auto;
 }
-ul {
+ul.main{
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  padding: 0 30px calc(23% + 30px);
+}
+ul.sidebar{
   list-style-type: none;
 }
-li {
+li.content{
   text-align: left;
   margin-top: 50px;
   border-bottom: 1px solid #A5A7A9;
@@ -52,5 +58,7 @@ li {
 .subAdd img{
   max-height: 90px;
   margin: 0;
-
+}
+li:first-child{
+order:5;
 }

@@ -1,20 +1,22 @@
 <h2>Culture</h2>
-<div class="culture">
-  <ul>
-    <li>CULTURAL COMMENT</li>
-    <li>THE CRITICS</li>
-    <li>FOOD</li>
-    <li>PHOTO BOOTH</li>
-    <li>CROSSWORD</li>
+<div>
+  <ul class="culture">
+    <li class="cult">CULTURAL COMMENT</li>
+    <li class="cult">THE CRITICS</li>
+    <li class="cult">FOOD</li>
+    <li class="cult">PHOTO BOOTH</li>
+    <li class="cult">CROSSWORD</li>
   </ul>
 </div>
-<ul>
-  <li *ngFor="let currentArticle of articles | async| categoryCulture">
-<img src={{currentArticle.url}} />
-<h2 (click)="goToDetailPage(currentArticle)">{{currentArticle.headline | uppercase }}</h2>
-    <p>
-      By {{currentArticle.author}}
-    </p>
-    <p>{{currentArticle.snippet}}</p>
-  </li>
-</ul>
+<div>
+  <ul class="main">
+    <li class="main" *ngFor="let currentArticle of articles | async| categoryCulture">
+  <img src={{currentArticle.url}} />
+  <h2 (click)="goToDetailPage(currentArticle)">{{currentArticle.headline | uppercase }}</h2>
+      <p>
+        By {{currentArticle.author}}
+      </p>
+      <p>{{currentArticle.snippet}}</p>
+    </li>
+  </ul>
+</div>

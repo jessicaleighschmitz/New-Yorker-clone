@@ -3,7 +3,7 @@
     <ul>
       <li *ngFor="let currentArticle of articles | async | categoryPolitics">
     <img src={{currentArticle.url}} />
-    <h2>{{currentArticle.headline | uppercase }}</h2>
+    <h2 (click)="goToDetailPage(currentArticle)">{{currentArticle.headline | uppercase }}</h2>
         <p>
           By {{currentArticle.author}}
         </p>

@@ -1,13 +1,13 @@
-<div *ngIf="childSelectedNews" class="entireArticle">
+<div class="full">
   <ul>
     <li>
-      <img src={{childSelectedNews.url}} />
-      <h2>{{childSelectedNews.headline | uppercase }}</h2>
+      <!-- <img src={{(articleToDisplay | async)?.url}} /> -->
+      <h2>{{(articleToDisplay | async)?.headline | uppercase }}</h2>
           <p>
-            By {{childSelectedNews.author}}
+            By {{(articleToDisplay | async)?.author}}
           </p>
-      {{childSelectedNews.fullContent}}
+      {{(articleToDisplay | async)?.fullContent}}
     </li>
   </ul>
-  <button (click)="finishedShowing()">Show less</button>
+  <!-- <button (click)="finishedShowing()">Show less</button> -->
 </div>

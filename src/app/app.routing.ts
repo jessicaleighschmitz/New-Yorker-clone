@@ -5,6 +5,7 @@ import { SubscribeComponent }   from './subscribe/subscribe.component';
 import { CultureComponent }   from './culture/culture.component';
 import { BooksComponent }   from './books/books.component';
 import { PoliticsComponent } from './politics/politics.component';
+import { ShowComponent } from './show/show.component';
 
 const appRoutes: Routes = [
 {
@@ -26,6 +27,10 @@ const appRoutes: Routes = [
 {
   path: 'politics',
   component: PoliticsComponent
+},
+{
+  path: 'articles/:id',
+  component: ShowComponent
 }
 ];
 export const routing: ModuleWithProviders = RouterModule.forRoot(appRoutes);

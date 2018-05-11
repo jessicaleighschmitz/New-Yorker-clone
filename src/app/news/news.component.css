@@ -9,10 +9,6 @@ body {
   border-left: 1px solid #A5A7A9;
   max-width: 30%;
 }
-#books {
-  border-right: 1px solid #A5A7A9;
-  max-width: 30%;
-}
 #news {
   border-left: 1px solid #A5A7A9;
   border-right: 1px solid #A5A7A9;
@@ -27,7 +23,6 @@ img {
   max-height: 250px;
   max-width: 80%;
   margin: 0 auto;
-
 }
 ul {
   list-style-type: none;

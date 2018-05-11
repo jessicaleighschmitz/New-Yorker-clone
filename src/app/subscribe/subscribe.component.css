@@ -6,13 +6,23 @@ input {
   height: 70px;
   display: block;
 }
+#headerPlan span{
+  color: #df3331;
+}
 h2{
   font-size: 38px;
   text-align: center;
   display: block;
 }
 #subscribeOptions{
-  display: flex;
+display: flex;
+color: #333;
+font-size: 18px;
+letter-spacing: -0.25px;
+line-height: 24px;
+text-align: center;
+clear: both;
+margin-left: 0;
 }
 .subscribeOffer{
   background-color: #df3331;
@@ -31,4 +41,15 @@ h2{
   cursor: pointer;
   outline: none;
   text-align: center;
+}
+#print{
+  padding-left: 40px;
+  padding-right: 66px;
+  width: 271px;
+  margin-bottom: 40px;
+}
+#enterInfo{
+  font-size: 24px;
+  display: block;
+  padding-right: 25px;
 }

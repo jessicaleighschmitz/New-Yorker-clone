@@ -56,17 +56,25 @@
   </div>
 </div>
 </div>
-  <label>First Name:</label>
+<div id="middleImage">
+  <img src="https://subscribe.newyorker.com/circulation/newyorker/images/TNY_landingpage_PremiumBar_FellswoopWithToteB.png" alt="tote image">
+</div>
+<div class="UserInfo">
+  <p id="enterInfo">
+    Enter your information.
+  </p>
+  <label>FIRST NAME:</label>
   <input #firstNameInput type="text" required>
-  <label>Last Name:</label>
+  <label>LAST NAME:</label>
   <input #lastNInput type="text">
-  <label>Email:</label>
+  <label>EMAIL:</label>
   <input #emailInput type="text">
-  <label>Street Address:</label>
+  <label>STREET ADDRESS:</label>
   <input #streetInput type="text">
-  <label>City Address:</label>
+  <label>CITY:</label>
   <input #cityInput type="text">
-  <label>State:</label>
+  <label>STATE:</label>
   <input #stateInput type="text">
 
   <button (click)="submitForm(firstNameInput.value, lastNameInput.value, emailInput.value, streetInput.value, cityInput.value, stateInput.value)">Subscribe</button>
+</div>

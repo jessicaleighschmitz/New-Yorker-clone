@@ -32,10 +32,6 @@ li {
   margin-top: 50px;
   border-bottom: 1px solid #A5A7A9;
 }
-button {
-  height: 25px;
-  border-radius: 15%;
-}
-button:hover {
-  cursor: pointer;
+#sidebar{
+  max-width: 320px;
 }

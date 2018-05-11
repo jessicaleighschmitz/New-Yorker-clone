@@ -7,12 +7,13 @@ img {
 ul {
   list-style-type: none;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
 }
 li {
   display: inline;
   padding: 15px 0;
   font-weight: bold;
+  margin: 0 20px;
 }
 .culture{
 

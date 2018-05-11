@@ -1,8 +1,7 @@
 <div class="container">
-  <div id="culture">
-    <h3>Culture</h3>
+  <div>
     <ul>
-      <li *ngFor="let currentArticle of articles | async">
+      <li *ngFor="let currentArticle of articles | async | categoryPolitics">
     <img src={{currentArticle.url}} />
     <h2>{{currentArticle.headline | uppercase }}</h2>
         <p>
@@ -13,7 +12,7 @@
       </li>
     </ul>
   </div>
-  <div id="news" class="politicsArticles">
+  <!-- <div id="news" class="politicsArticles">
    <h3>News and Politics</h3>
     <ul>
       <li *ngFor="let currentArticle of articles | async">
@@ -26,11 +25,11 @@
         <button>Read more</button>
       </li>
     </ul>
-  </div>
-  <div id="books">
-    <h3>Book Reviews</h3>
+  </div> -->
+  <div id="sidebar">
+    <h3>News &amp; Culture</h3>
     <ul>
-      <li *ngFor="let currentArticle of articles | async">
+      <li *ngFor="let currentArticle of articles | async | categoryCulture">
     <img src={{currentArticle.url}} />
     <h2>{{currentArticle.headline | uppercase }}</h2>
         <p>

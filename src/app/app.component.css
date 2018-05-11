@@ -5,6 +5,9 @@ img#logo{
   margin: 50px auto;
   width: 50%;
 }
+a img#tote:hover{
+  border-bottom: none;
+}
 ul#nav{
   display: flex;
   justify-content: space-around;
@@ -13,7 +16,6 @@ ul#nav{
   border-bottom: solid 1px #A5A7A9;
 }
 li {
-
   display: inline;
   padding: 15px 0;
   font-weight: bold;

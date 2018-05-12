@@ -4,6 +4,8 @@
 
 #### **By, Jessica Schmitz**
 
+###To see live copy and paste https://new-yorker-clone.firebaseapp.com into your browser.
+
 ### Specs
 
 1) Program displays news component containing an article object.
